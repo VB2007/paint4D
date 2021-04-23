@@ -12,6 +12,8 @@ canvas.onmousedown = () => {
         context.fillStyle = color
         context.fillRect(event.offsetX-width/2, event.offsetY-width/2, width, width)
     }
+    context.fillStyle = color
+    context.fillRect(event.offsetX-width/2, event.offsetY-width/2, width, width)
     canvas.onmouseup = () => {
         canvas.onmousemove = null
     }
