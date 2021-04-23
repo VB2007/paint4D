@@ -10,9 +10,10 @@ body{
 }
 #container{
     width: 90%;
+    height: 90%;
     border: blueviolet 15px solid;
     margin: auto;
-    height: 90%;
+    position: relative;
 }
 #canvas{
     width: 100%;
