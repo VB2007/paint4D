@@ -2,11 +2,13 @@ let canvas = document.getElementById('canvas'),
     context = canvas.getContext('2d'),
     canvasWidth = canvas.clientWidth,
     canvasHeight = canvas.clientHeight,
-    color = 'white',
+    color = document.getElementById('color'),
     width = 20
 canvas.width = canvasWidth
 canvas.height = canvasHeight
-
+document.getElementById('color').oninput = function(){
+    color=this.value
+}
 canvas.onmousedown = () => {
     canvas.onmousemove = (event) => {
         context.fillStyle = color
