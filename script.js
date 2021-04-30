@@ -2,10 +2,19 @@ let canvas = document.getElementById('canvas'),
     context = canvas.getContext('2d'),
     canvasWidth = canvas.clientWidth,
     canvasHeight = canvas.clientHeight,
-    color = 'white',
-    width = 20
+    color = document.getElementById('color'),
+    width = document.getElementById('width')
+
 canvas.width = canvasWidth
 canvas.height = canvasHeight
+
+document.getElementById('color').oninput = function(){
+    color=this.value
+}
+document.getElementById('width').oninput = function(){
+    width=this.value
+}
+
 
 canvas.onmousedown = () => {
     canvas.onmousemove = (event) => {
