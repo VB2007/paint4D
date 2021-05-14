@@ -10,7 +10,20 @@
 <body>
     <h1 id='text'>THE BEST PAINT EVER</h1>
     <div id='container'><canvas id='canvas'></canvas></div>
-    <input type="color" id='color' value="#ffffff">
+    <div class = "flexContainer">
+        <div class="item" style='color: white'>
+            Brush color:
+            <input type="color" id="color" value="#ffffff">
+        </div>
+        <div class="item" style='color: white'>
+            Background color:
+            <input type="color" id="background" value="#000000">
+        </div>
+        <div style='color: white'>
+            Choosen tool: 
+            <button id="tool">brush</button>
+        </div>
+    </div>
     <input type="range" id="width" min=2 max=200 step=2 value=20>
     <a style='color: white' download='THEBESTPICTURE.jpg' id='img'>SAVE</a>
     <script src="script.js"></script>

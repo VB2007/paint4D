@@ -10,10 +10,18 @@ body{
 }
 #container{
     width: 90%;
-    height: 90%;
+    height: 70%;
     border: blueviolet 15px solid;
     margin: auto;
     position: relative;
+}
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    padding: 5px 20px;
 }
 #canvas{
     width: 100%;
