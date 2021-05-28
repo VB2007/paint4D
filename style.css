@@ -1,25 +1,57 @@
 html{
     text-align: center;
-    background-color: black;
-    width: 99%;
+    width: 100%;
     height: 90%;
 }
+
 body{
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
 #container{
     width: 90%;
-    height: 90%;
-    border: blueviolet 15px solid;
+    height: 80%;
+    border: darkslategray 5px solid;
     margin: auto;
     position: relative;
 }
+
 #canvas{
     width: 100%;
     height: 100%;
-    cursor:cell;
+    cursor: cell;
+    z-index: 2;
+    position: absolute;
+    left: 0;
 }
-#text{
-    color: white;
+
+#bg_layer{
+    width: 100%;
+    height: 100%;
+    cursor: cell;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+}
+
+#save_canvas{
+    width: 100%;
+    height: 100%;
+    cursor: cell;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    padding: 5px 20px;
 }
