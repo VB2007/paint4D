@@ -67,10 +67,10 @@ cnv.onmousedown = (e) => {
 cnv.ontouchmove = (event) => {
     if (tool == "Кисточка") {
         ctx.fillStyle = color;
-        ctx.fillRect(event.changedTouches[0].clientX - width / 2 - cnv.getBoundingClientRact().left, event.changedTouches[0].clientY - width / 2 - cnv.getBoundingClientRact().top, width, width);
+        ctx.fillRect(event.changedTouches[0].clientX - width / 2 - cnv.getBoundingClientRect().left, event.changedTouches[0].clientY - width / 2 - cnv.getBoundingClientRekt().top, width, width);
     }
     else {
-        ctx.clearRect(event.changedTouches[0].clientX - width / 2 - cnv.getBoundingClientRact().left, event.changedTouches[0].clientY - width / 2 - cnv.getBoundingClientRact().top, width, width);
+        ctx.clearRect(event.changedTouches[0].clientX - width / 2 - cnv.getBoundingClientRekt().left, event.changedTouches[0].clientY - width / 2 - cnv.getBoundingClientRekt().top, width, width);
     }
 }
 
